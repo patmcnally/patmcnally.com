@@ -1,0 +1,115 @@
+body{
+	margin-left: 1em
+}
+
+h3.heading_small{
+	
+}
+
+p{
+	font-size:.9em;
+}
+#sizer{
+	margin-left:-1em;
+	font-size: 1.2em;
+	margin-top:-.5em;
+}
+
+#header{
+	margin-left: 0em;
+	margin-top: 1em;
+}
+
+#title{
+}
+
+#title h5{
+	font-size: 1.2em;
+}
+
+#subtitle{
+	float:right;
+	margin-top:-.8em;
+	margin-right: 2em;
+}
+
+#subtitle p{
+	font-size:.30em;
+}
+h2{
+	font-size: 1.2em;
+}
+
+h3{
+	font-size:1.25em;
+	font-style:oblique;
+}
+a{
+	text-decoration: none;
+	color:#B1B4B6;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #4E4E4E;
+}
+a:visited{
+	color: #4E4E4E;
+}
+
+table{
+margin-top:0.1em;
+}
+
+table td{
+	padding: 0 .5em 0 .5em;
+}
+table th{
+	text-align:center;
+}
+
+#menu{
+	border-top: 1px solid #998928;
+	margin-top: -.2em;
+	margin-left: -.5em;
+	padding-left: .75em;
+}
+#menu ul{
+	margin-top: -.2em;
+	padding: 0;
+}
+#menu li{
+	display: inline;
+	list-style-type: none;
+}
+#menu a{
+	font-size: .8em;
+	text-decoration: none;
+	color: black;
+}
+#menu a:hover{
+	text-decoration: underline;
+}
+
+#content{
+	max-width: 35em;
+	margin: 2em 1em 2em 1.5em;
+	
+}
+#content p{
+	margin: 0em 0em 1em 2em;
+}
+
+#footer{
+	border-top: 1px solid #998928;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size: .8em;
+	width:50%;
+}
+
+.vcard {
+	text-align:center;
+	
+}
