@@ -1,9 +1,10 @@
 body{
-	margin-left: 1em
+	margin-left: 5em;
+	margin-right: 5em;
 }
 
-h3.heading_small{
-	
+.small{
+    font-size:.8em;
 }
 
 p{
@@ -24,18 +25,14 @@ p{
 }
 
 #title h5{
-	font-size: 1.2em;
+    font-family: Georgia,'Bitstream Vera Sans Serif','Lucida Grande',Helvetica,Verdana,Arial,sans-serif;
+    font-size: 2.5em;
 }
 
-#subtitle{
-	float:right;
-	margin-top:-.8em;
-	margin-right: 2em;
+#title h5 .bigLetter{
+    font-size: 110%;
 }
 
-#subtitle p{
-	font-size:.30em;
-}
 h2{
 	font-size: 1.2em;
 }
@@ -69,26 +66,31 @@ table th{
 }
 
 #menu{
-	border-top: 1px solid #998928;
+	
 	margin-top: -.2em;
-	margin-left: -.5em;
-	padding-left: .75em;
+	
+	padding-top: 0em;
+	padding-left: .5em;
+	
 }
 #menu ul{
+    font-family: sans-serif;
 	margin-top: -.2em;
 	padding: 0;
 }
 #menu li{
 	display: inline;
 	list-style-type: none;
+	margin-left: .5em;
 }
 #menu a{
-	font-size: .8em;
-	text-decoration: none;
-	color: black;
+    color: black;
+    font-size: .9em;
+    text-decoration: none;
+    
 }
 #menu a:hover{
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #content{
