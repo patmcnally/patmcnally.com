@@ -1,6 +1,6 @@
 body{
-	margin-left: 5em;
-	margin-right: 5em;
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 .small{
@@ -8,17 +8,17 @@ body{
 }
 
 p{
-	font-size:.9em;
+    font-size:.9em;
 }
 #sizer{
-	margin-left:-1em;
-	font-size: 1.2em;
-	margin-top:-.5em;
+    margin-left:-1em;
+    font-size: 1.2em;
+    margin-top:-.5em;
 }
 
 #header{
-	margin-left: 0em;
-	margin-top: 1em;
+    margin-left: 0em;
+    margin-top: 1em;
 }
 
 #title{
@@ -29,89 +29,85 @@ p{
     font-size: 2.5em;
 }
 
-#title h5 .bigLetter{
-    font-size: 110%;
-}
-
 h2{
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 h3{
-	font-size:1.25em;
-	font-style:oblique;
+    font-size:1.25em;
+    font-style:oblique;
 }
 a{
-	text-decoration: none;
-	color:#B1B4B6;
+    text-decoration: none;
+    color:#B1B4B6;
 }
 
 a:hover{
-	text-decoration: underline;
-	color: #4E4E4E;
+    text-decoration: underline;
+    color: #4E4E4E;
 }
 a:visited{
-	color: #4E4E4E;
+    color: #4E4E4E;
 }
 
 table{
-margin-top:0.1em;
+    margin-top:0.1em;
 }
 
 table td{
-	padding: 0 .5em 0 .5em;
+    padding: 0 .5em 0 .5em;
 }
 table th{
-	text-align:center;
+    text-align:center;
 }
 
 #menu{
-	
-	margin-top: -.2em;
-	
-	padding-top: 0em;
-	padding-left: .5em;
-	
+    
+    margin-top: -.2em;
+    padding-top: 0em;
+    padding-left: .55em;
+    
 }
 #menu ul{
     font-family: sans-serif;
-	margin-top: -.2em;
-	padding: 0;
+    margin-top: -.2em;
+    padding: 0;
 }
 #menu li{
-	display: inline;
-	list-style-type: none;
-	margin-left: .5em;
+    display: inline;
+    list-style-type: none;
+    margin-left: .5em;
 }
 #menu a{
-    color: black;
+    color: #AAA;
     font-size: .9em;
     text-decoration: none;
     
 }
 #menu a:hover{
+    color: black;
     text-decoration: underline;
 }
 
 #content{
-	max-width: 35em;
-	margin: 2em 1em 2em 1.5em;
-	
+    max-width: 35em;
+    margin: 2em 0em 2em 0em;
+    
 }
 #content p{
-	margin: 0em 0em 1em 2em;
+    margin: 0em 0em 1em 0em;
 }
 
 #footer{
-	border-top: 1px solid #998928;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:center;
-	font-size: .8em;
-	width:50%;
+    border-top: 1px solid #998928;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size: .8em;
+    width:50%;
 }
 
 .vcard {
-	text-align:center;
-	
+    text-align:center;
+    
 }
