@@ -17,26 +17,24 @@ p{
 }
 
 #header{
-    margin-left: 0em;
-    margin-top: 1em;
+    width: 14em;    
+    margin: 1em auto 1em auto;
 }
 
 #title{
 }
 
-#title h5{
+#title h1{
     font-family: Georgia,'Bitstream Vera Sans Serif','Lucida Grande',Helvetica,Verdana,Arial,sans-serif;
     font-size: 2.5em;
 }
 
-h2{
-    font-size: 1.2em;
+
+h1 .subtle{
+    font-size:.8em;
+    color:#DDD;
 }
 
-h3{
-    font-size:1.25em;
-    font-style:oblique;
-}
 a{
     text-decoration: none;
     color:#B1B4B6;
