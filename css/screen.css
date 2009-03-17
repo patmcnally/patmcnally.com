@@ -22,11 +22,13 @@ p{
 }
 
 #title{
+    margin-bottom: 0;
 }
 
 #title h1{
     font-family: Georgia,'Bitstream Vera Sans Serif','Lucida Grande',Helvetica,Verdana,Arial,sans-serif;
     font-size: 2.5em;
+    margin-bottom: 0;
 }
 
 
@@ -60,21 +62,19 @@ table th{
 }
 
 #menu{
-    
     margin-top: -.2em;
     padding-top: 0em;
     padding-left: .55em;
-    
 }
 #menu ul{
-    font-family: sans-serif;
+    margin-left: 1em;
     margin-top: -.2em;
     padding: 0;
 }
 #menu li{
     display: inline;
     list-style-type: none;
-    margin-left: .5em;
+    margin-left: 1em;
 }
 a{
     color: #AAA;
