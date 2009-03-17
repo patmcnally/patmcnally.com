@@ -1,6 +1,15 @@
 body{
-    margin-left: 6em;
-    margin-right: 6em;
+  
+}
+
+.site{
+   margin: 1em auto;
+   width: 750px;
+   
+}
+
+img{
+    border: 0;
 }
 
 .small{
@@ -14,11 +23,6 @@ p{
     margin-left:-1em;
     font-size: 1.2em;
     margin-top:-.5em;
-}
-
-#header{
-    width: 14em;    
-    margin: 1em auto 1em auto;
 }
 
 #title{
@@ -37,6 +41,11 @@ h1 .subtle{
     color:#DDD;
 }
 
+h2{
+    font-size: 1.2em;
+    color:#555;
+}
+
 ul a{
     text-decoration: none;
     color:#B1B4B6;
@@ -50,16 +59,6 @@ ul a:visited{
     color: #4E4E4E;
 }
 
-table{
-    margin-top:0.1em;
-}
-
-table td{
-    padding: 0 .5em 0 .5em;
-}
-table th{
-    text-align:center;
-}
 
 #menu{
     margin-top: -.2em;
@@ -87,13 +86,12 @@ a:hover{
     text-decoration: underline;
 }
 
-#content{
-    max-width: 35em;
-    margin: 2em 0em 2em 0em;
-    
+.content{
+    margin: 2em auto;
+    width: 750px;
 }
-#content p{
-    margin: 0em 0em 1em 0em;
+.content p{
+ 
 }
 
 #places {
@@ -110,26 +108,52 @@ a:hover{
     font-family: sans-serif;
 }
 
-#footer{
-    border-top: 1px solid black;
-    margin: 2em auto 0 auto;
-    text-align:center;
-    font-size: .8em;
-    width:50%;
+.posts li{
+    list-style: none;
+}
+
+.date{
+    font-family:monospace;
+}
+
+
+
+.footer{
+    
+    margin: 6em 0;
+    font-size: .9em;
+  
 }
 
 .vcard{
     float: left;
+    padding-right: 2em;
+    border-right:  1px solid black;
 }
 
 .contact-links{
-    float: right;
+    float: left;
 }
 
 .contact-links ul{
     list-style: none;
+    width: 200px;
+    
+}
+.contact-links li{
+    float: left;
+    margin: 0 1em;
+    width: 60px;
+    padding: 0 3px;
+}
+.contact-links li a{
+    display:block;
+ 
+    width:100%;
 }
 
-.vcard {
-    text-align:center;   
+.rss{
+    float: left;
+    margin-top: 1em;
 }
+
