@@ -1,68 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
+---
+layout: default
+title: Pat McNally
+---
 
-<html lang="en"/>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>patmcnally.com</title>
-	<meta name="author" content="Patrick McNally">
-	
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.4.1/build/reset/reset-min.css">
-	<link rel = "stylesheet" type="text/css" href="main_style.css" >
-	<!-- Date: 2008-01-08 -->
-	
-<script language="JavaScript">
-  function goBack(){
-    history.back();
-  }
-</script>
-
-
-</head>
-<body>
-
-	<div id="header">
-		<div id="title">
-			<h1>PatMcNally<span class="subtle">.com</span></h1>
-		</div>
-	
-		<div id="menu">
-			<ul>
-				<li><a href="javascript:history.back();">blog</a></li>
-				<li><a href="#">resume</a></li>
-				<li><a href="#">code</a></li>
-				<li><a href="#">info</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="content">
-	
-		<p>
-			I'm excited about computers and the problems that surround them.
-		</p>
-		<p>
-			I like open.
-		</p>		
-		<p>
-			I don't mind serifs.
-		</p>
-	</div>
-	
-	<div id="footer">
-			<div class="vcard">
-			   <div class="fn">Patrick McNally</div>
-			   <div><a href="mailto:&#112;&#097;&#116;&#064;&#112;&#097;&#116;&#109;&#099;&#110;&#097;&#108;&#108;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#116;&#064;&#112;&#097;&#116;&#109;&#099;&#110;&#097;&#108;&#108;&#121;&#046;&#099;&#111;&#109;</a></div>
-				 <a class="url" href="http://patmcnally.com/">http://patmcnally.com/</a>
-			 </div>
-							<p>	All the appropriate places</p>
-				
-			  <a href="http://www.facebook.com/people/Patrick_McNally/3109759">facebook</a>-
-				<a href="http://www.linkedin.com/in/patrickmcnally">Linked in</a>-
-				<a href="http://twitter.com/patmcnally">twitter</a>-
-				<a href="http://del.icio.us/patmcnally">del.icio.us</a>
-	
-	</div>
-	
-</body>
-</html>
+<div id ="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

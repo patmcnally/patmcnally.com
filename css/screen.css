@@ -1,0 +1,135 @@
+body{
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.small{
+    font-size:.8em;
+}
+
+p{
+    font-size:.9em;
+}
+#sizer{
+    margin-left:-1em;
+    font-size: 1.2em;
+    margin-top:-.5em;
+}
+
+#header{
+    width: 14em;    
+    margin: 1em auto 1em auto;
+}
+
+#title{
+}
+
+#title h1{
+    font-family: Georgia,'Bitstream Vera Sans Serif','Lucida Grande',Helvetica,Verdana,Arial,sans-serif;
+    font-size: 2.5em;
+}
+
+
+h1 .subtle{
+    font-size:.8em;
+    color:#DDD;
+}
+
+ul a{
+    text-decoration: none;
+    color:#B1B4B6;
+}
+
+ul a:hover{
+    text-decoration: underline;
+    color: #4E4E4E;
+}
+ul a:visited{
+    color: #4E4E4E;
+}
+
+table{
+    margin-top:0.1em;
+}
+
+table td{
+    padding: 0 .5em 0 .5em;
+}
+table th{
+    text-align:center;
+}
+
+#menu{
+    
+    margin-top: -.2em;
+    padding-top: 0em;
+    padding-left: .55em;
+    
+}
+#menu ul{
+    font-family: sans-serif;
+    margin-top: -.2em;
+    padding: 0;
+}
+#menu li{
+    display: inline;
+    list-style-type: none;
+    margin-left: .5em;
+}
+a{
+    color: #AAA;
+    font-size: .9em;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#content{
+    max-width: 35em;
+    margin: 2em 0em 2em 0em;
+    
+}
+#content p{
+    margin: 0em 0em 1em 0em;
+}
+
+#places {
+    text-align: right;
+    margin: 0 2px 0 auto;
+    width: 10em;
+  
+}
+#places h3{
+    font-size: .9em;
+}
+#places ul{
+    list-style:none;
+    font-family: sans-serif;
+}
+
+#footer{
+    border-top: 1px solid black;
+    margin: 2em auto 0 auto;
+    text-align:center;
+    font-size: .8em;
+    width:50%;
+}
+
+.vcard{
+    float: left;
+}
+
+.contact-links{
+    float: right;
+}
+
+.contact-links ul{
+    list-style: none;
+}
+
+.vcard {
+    text-align:center;   
+}

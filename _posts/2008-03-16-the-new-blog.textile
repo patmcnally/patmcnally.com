@@ -1,0 +1,11 @@
+---
+layout: post
+title: The New Blog
+---
+
+h1. {{ page.title }}
+
+p(meta). 3 March 2008 - St. Louis
+
+I keep meaning to get off my rear and get my blog back up and running. I thought for awhile about "Mephisto":mephistoblog.com but a chance reading of "Tom Preston-Werner's blog":http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html led me down the path to "Jekyll":http://github.com/mojombo/jekyll/tree which is what you're seeing in front of you.
+
