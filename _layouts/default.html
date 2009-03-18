@@ -12,12 +12,13 @@
    <!--<link rel="stylesheet" href="/css/syntax.css" type="text/css" />-->
  
    <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 </head>
 <body>
  
-<div class="site">
-  
+
+  <div class="site">
   <div id="header">
     <div id="title">
       <h1><a href="/">PatMcNally.com</a></h1>
@@ -28,10 +29,10 @@
 	<li><a class="subtitle" href="/">blog</a></li>
 	<li><a class="subtitle" href="/">brag</a></li>
     </div>
-</div>
-  
+  </div>
+  <div class="content_wrap">
   {{ content }}
-  
+  </div>
   <div class="footer">
     <div class="contact vcard">
       <div class="fn">Pat McNally</div>
@@ -61,8 +62,8 @@
       </a>
     </div>
   </div>
+  <br style="clear:both;"/>
 </div>
- 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

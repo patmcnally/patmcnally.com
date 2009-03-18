@@ -1,12 +1,15 @@
 body{
-  
+    
 }
 
 .site{
    margin: 1em auto;
-   width: 750px;
+   width: 750px;  
+   
    
 }
+
+
 
 img{
     border: 0;
@@ -19,22 +22,41 @@ img{
 p{
     font-size:.9em;
 }
-#sizer{
-    margin-left:-1em;
-    font-size: 1.2em;
-    margin-top:-.5em;
+
+
+a{
+    color: #AAA;
+    font-size: .9em;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#header{
+   margin: 2em auto 0 auto;
+   height: 100px;
+   width: 746px;  
+  
+
 }
 
 #title{
-    margin-bottom: 0;
+    margin: 1em 0 0 0;
+    text-align: center;
 }
 
 #title h1{
     font-family: Georgia,'Bitstream Vera Sans Serif','Lucida Grande',Helvetica,Verdana,Arial,sans-serif;
     font-size: 2.5em;
-    margin-bottom: 0;
+    margin: 0 auto;
+ 
 }
-
+#title a{
+    color: #9E321C;
+}
 
 h1 .subtle{
     font-size:.8em;
@@ -44,6 +66,7 @@ h1 .subtle{
 h2{
     font-size: 1.2em;
     color:#555;
+    margin-bottom: .25em;
 }
 
 ul a{
@@ -62,12 +85,13 @@ ul a:visited{
 
 #menu{
     margin-top: -.2em;
+    margin-left: -8em;
     padding-top: 0em;
-    padding-left: .55em;
+    padding-left: 0em;
+    text-align: center;
 }
 #menu ul{
-    margin-left: 1em;
-    margin-top: -.2em;
+    margin: -.2em 0 0 1em;
     padding: 0;
 }
 #menu li{
@@ -75,39 +99,29 @@ ul a:visited{
     list-style-type: none;
     margin-left: 1em;
 }
-a{
-    color: #AAA;
-    font-size: .9em;
-    text-decoration: none;
-    
+
+#menu a{
+    color: #283D40;
 }
-a:hover{
-    color: black;
-    text-decoration: underline;
+
+.content_wrap{
+
+    width:100%;
 }
 
 .content{
     margin: 2em auto;
     width: 750px;
+    background-color: white;
+    min-height: 300px;
 }
 .content p{
  
 }
 
-#places {
-    text-align: right;
-    margin: 0 2px 0 auto;
-    width: 10em;
-  
+.posts{
+    margin-top: .2em;
 }
-#places h3{
-    font-size: .9em;
-}
-#places ul{
-    list-style:none;
-    font-family: sans-serif;
-}
-
 .posts li{
     list-style: none;
 }
@@ -119,10 +133,9 @@ a:hover{
 
 
 .footer{
-    
-    margin: 6em 0;
+    width: 750px;  
+    margin: 6em auto 0 160px;
     font-size: .9em;
-  
 }
 
 .vcard{
