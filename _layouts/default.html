@@ -1,79 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
- 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Pat McNally" />
-   <link href="http://feeds2.feedburner.com/patmcnally" rel="alternate" title="PatMcNally.com" type="application/atom+xml" />
- 
-   <!-- syntax highlighting CSS -->
-   <!--<link rel="stylesheet" href="/css/syntax.css" type="text/css" />-->
- 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=806" />
+<title>{{ page.title }}</title> 
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen"/>
+<!-- <link rel="stylesheet" href="css/iPhone.css" type="text/css" media="only screen and (max-device-width: 480px)" /> -->
+<!-- <link rel="alternate" type="application/atom+xml" title="Atom" href="http://feeds2.feedburner.com/robey" /> -->
+<!--<link rel="alternate" type="application/rss+xml" title="patmcnally.com RSS Feed" href="feed" /> -->
+<!--<script type="text/javascript" src="js/something.js"></script> -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2389638-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
-<body>
- 
 
-  <div class="site">
-  <div id="header">
-    <div id="title">
-      <h1><tt><a href="/">PatMcNally.com</a></tt></h1>
-    </div>
-    <div id="menu">
-      <ul>
-	<li><a class="subtitle" href="/">home</a></li>
-	<li><a class="subtitle" href="/">blog</a></li>
-	<li><a class="subtitle" href="/">brag</a></li>
-    </div>
-  </div>
-  <div class="content_wrap">
+<body> 
+<div id="container"> 
+<header>
+  <h1>
+    <a href="/">patmcnally.com</a> 
+  </h1>
+</header>
+
+<div id="content">
+  {% if page.date %}
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date_to_string }} - {{page.location}}</p>
+  {% endif %}
+
   {{ content }}
-  </div>
-  <div class="footer">
-    <div class="contact vcard">
-      <div class="fn"><tt>Pat McNally</tt></div>
-      <div><a href="mailto:&#112;&#097;&#116;&#064;&#112;&#097;&#116;&#109;&#099;&#110;&#097;&#108;&#108;&#121;&#046;&#099;&#111;&#109;">&#112;&#097;&#116;&#064;&#112;&#097;&#116;&#109;&#099;&#110;&#097;&#108;&#108;&#121;&#046;&#099;&#111;&#109;</a></div>
-      <a class="url" href="http://patmcnally.com/">http://patmcnally.com/</a>
-    </div>
-	  
-    <div class="contact contact-links">
-      <ul>
-	<li>
-	  <a href="http://www.facebook.com/people/Patrick_McNally/3109759">Facebook</a>
-	</li>
-	<li>
-	  <a href="http://www.linkedin.com/in/patrickmcnally">Linked in</a>
-	</li>
-	<li>
-	  <a href="http://twitter.com/patmcnally">twitter</a>
-	</li>
-	<li>
-	  <a href="http://github.com/patmcnally">github</a>
-	</li>
-      </ul>
-    </div>
-    <div class="rss">
-      <a href="http://feeds2.feedburner.com/patmcnally">
-        <img src="/images/feed-icon-28x28.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
-  <br style="clear:both;"/>
 </div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
 
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-2389638-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
-</body>
+<footer>
+
+  <div class="contact vcard">
+    <div id="personal">
+    <a class="url fn" rel="me" href="http://patmcnally.com/">Pat McNally</a>
+    <code>&lt;<a  class="email" href="mailto:pat.mcnally@gmail.com">pat.mcnally@gmail.com</a>&gt;
+    </code>
+    </div>
+    <div id="locations">
+    <ul> 
+	  <li> 
+	    <a rel="me" class="url" href="http://www.facebook.com/people/Patrick_McNally/3109759">
+          Facebook
+        </a> 
+	  </li> 
+	  <li> 
+	  <a rel="me" class="url" href="http://www.linkedin.com/in/patrickmcnally">
+        LinkedIn
+      </a> 
+	  </li> 
+	  <li> 
+	    <a rel="me" class="url" href="http://twitter.com/patmcnally">
+          Twitter
+        </a> 
+	  </li> 
+	  <li> 
+	    <a rel="me" class="url" href="http://github.com/patmcnally">
+          Github
+        </a> 
+	  </li> 
+    </ul>
+    </div>
+  </div>
+</footer>
+<!-- 
+     Many thanks to Robey Pointer [http://robey.lag.net/] for
+     inspiring the content and feel of this site 
+-->
 </html>
