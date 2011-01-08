@@ -5,4 +5,4 @@ location: St. Louis
 ---
 This is what I've been doing:
 
-<object width='640' height='360'> <param name='movie' value='http://albums.phanfare.com/video_config.ashx?m=player&.swf' />   <param name='flashvars' value='config=http://albums.phanfare.com/video_config.ashx?m=conf%26hs=2083e3534915ef2e1712fab48c831c60%26u=9365663%26a=4804805%26i=108739086%26w=640%26h=360' />  <param name='allowFullScreen' value='true' /> <param name='bgcolor' value='#000000' /> <embed type='application/x-shockwave-flash' width='640' height='360' allowfullscreen='true' bgcolor='#000000' src='http://albums.phanfare.com/video_config.ashx?m=player&.swf' flashvars='config=http://albums.phanfare.com/video_config.ashx?m=conf%26hs=2083e3534915ef2e1712fab48c831c60%26u=9365663%26a=4804805%26i=108739086%26w=640%26h=360'></embed> </object>
+!/images/brigid/eating.jpg(My Daughter feeds herself)!
