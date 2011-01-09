@@ -25,6 +25,11 @@ ul{
 
 }
 
+#container{
+   max-width: 600px;
+   margin: 0px auto;
+}
+
 header {
     margin: 0;
 }
