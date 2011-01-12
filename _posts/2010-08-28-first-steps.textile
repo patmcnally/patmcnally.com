@@ -1,8 +1,0 @@
----
-layout: default
-title: Some First Steps
-location: St. Louis
----
-This is what I've been doing:
-
-!/images/brigid/eating.jpg(My Daughter feeds herself)!
