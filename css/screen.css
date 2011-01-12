@@ -31,6 +31,7 @@ h2 {
 p {
    font-family: "Helvetica Neue",Helvetica,Arial,default;
    font-size: 17px;
+   margin-top: 0.5em;
 }
 
 ul{
@@ -44,10 +45,6 @@ ul{
 
 header {
     margin: 0;
-}
-
-header h1{
-    margin: 0px 0 -4px 0px;
 }
 
 #content {

@@ -8,7 +8,12 @@ have a brand new baby and a beautiful wife. When I'm not being a
 dad I start awesome projects and finish a few.
 
 
+{% if site.posts.length > 0 %}
+
 ## Blog Posts ##
+
+{% endif %}
+
 {% for post in site.posts %}
  
  * __[{{ post.title}}]({{ post.url }})__ - _{{post.date | date_to_string}}_
