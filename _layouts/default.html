@@ -1,95 +1,50 @@
-<!DOCTYPE html lang="en">
-<html>
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=806" />
-<title>{{ page.title }}</title> 
-<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen"/>
-<!-- <link rel="stylesheet" href="css/iPhone.css" type="text/css" --
-  -- media="only screen and (max-device-width: 480px)" /> -->
-
-
-<link rel="alternate" type="application/atom+xml" title="Atom" href="http://feeds2.feedburner.com/patmcnally" />
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-2389638-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+ <!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<title>patmcnally.com</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,bold" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
+<body>
 
-<body> 
 <div id="container"> 
 <header>
-  <h1>
-    <a href="/">patmcnally.com</a> 
-  </h1>
+  <div id="logo">
+	<h1>patmcnally.com</h1>
+	
+	<h2>brag·ga·do·ci·o</h2>
+  </div>
 </header>
 
 <div id="content">
-  {% if page.date %}
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date_to_string }} - {{page.location}}</p>
-  {% endif %}
-
   {{ content }}
 </div>
 
+<ul id="social-media">
+  <li><a href="http://www.facebook.com/people/Patrick_McNally/3109759"><img src="images/icons/facebook.png"></a></li>
+  <li><a href="http://twitter.com/patmcnally"><img src="images/icons/twitter.png"></a></li>
+  <li><a href="https://plus.google.com/115675932754468606191"><img src="images/icons/google_plus.png"></a></li>
+  <li><a href="http://www.linkedin.com/in/patrickmcnally"><img src="images/icons/linkedin.png"></a></li>
+  <li><a href="http://github.com/patmcnally"><img src="images/icons/github.png"></a></li>
+</ul>
+
 <footer>
 
-  <div class="contact vcard">
-    <div id="personal">
-    <a class="url fn" rel="me" href="http://patmcnally.com/">Pat McNally</a>
-    <code>&lt;<script type="text/javascript">
-//<![CDATA[
-<!--
-var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-"=38){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-".substr(0,ol);}f(\")511,\\\"fl`s{f6yi9<1771\\\\<&/ +310\\\\3%$&(&)m6 0100\\" +
-"\\430\\\\aQTY720\\\\T^WXSsK]\\\\\\\\N@NA500\\\\^HX530\\\\IQHJCL200\\\\C#{yi" +
-"r9:Kz|u~w3L2}~mgi)(f:',mndt720\\\\710\\\\310\\\\U610\\\\720\\\\530\\\\230\\" +
-"\\300\\\\620\\\\330\\\\720\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoC" +
-"rahCmorf.gnirtS=+o;721=%y;2=*y))y+511(>i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\""+
-"\\\"=o,i rav{)y,x(f noitcnuf\")"                                             ;
-while(x=eval(x));
-//-->
-//]]>
-</script>&gt;
-    </code>
-    </div>
-    <div id="locations">
-    <ul> 
-	  <li> 
-	    <a rel="me" class="url" href="http://www.facebook.com/people/Patrick_McNally/3109759">
-          Facebook
-        </a> 
-	  </li> 
-	  <li> 
-	  <a rel="me" class="url" href="http://www.linkedin.com/in/patrickmcnally">
-        LinkedIn
-      </a> 
-	  </li> 
-	  <li> 
-	    <a rel="me" class="url" href="http://twitter.com/patmcnally">
-          Twitter
-        </a> 
-	  </li> 
-	  <li> 
-	    <a rel="me" class="url" href="http://github.com/patmcnally">
-          Github
-        </a> 
-	  </li> 
-    </ul>
-    </div>
-  </div>
 </footer>
 <!-- 
-     Many thanks to Robey Pointer [http://robey.lag.net/] for
-     inspiring the content and feel of this site 
+     Thanks for the base:
+     http://themeforest.net/item/isimple-theme/128757
+     
 -->
 </html>
+<script type="application/x-javascript">
+  function hideURLbar() { window.scrollTo(0, 1); }
+  addEventListener('load', function() { setTimeout(hideURLbar, 0) }, false);
+  window.onorientationchange = hideURLbar;
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</body>

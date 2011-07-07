@@ -1,0 +1,466 @@
+/* GENERAL
+------------------------------------------------------------ */
+
+body {
+	background:url(images/bg.png) repeat-x #FFF;
+	color:#000;
+	height:100%;
+	text-align:center;
+	display:block;
+	font-family:'Droid Sans', arial, serif;
+	font-size:16px;
+}
+
+h1,h2,h3,h4 {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+}
+
+code {
+	background: #F0F0F0;
+	padding: 2px 3px 0 3px;
+	border-left: 1px solid #000;
+	margin-right: 1px;
+}
+
+.right {
+	float:right;
+}
+
+.left {
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+/* CONTAINER
+------------------------------------------------------------ */
+
+#container {
+	width:310px;
+	width:500px;
+	margin:0 auto;
+}
+
+#container h2 {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-weight:bold;
+	font-size:22px;
+	text-transform:uppercase;
+}
+
+
+	
+/* HEADER
+------------------------------------------------------------ */
+
+#header {
+	width:310px;
+	position:relative;
+	margin:0 auto;
+}
+
+#topbar {
+	height:15px;
+	background:#1A1A1A;
+	border-bottom:1px solid #3C3C3C;
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+#logo {
+	margin-top:35px;
+}
+
+#logo h1 {
+	text-transform:capitalize;
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-size:62px;
+	margin:0;
+	text-transform:none;
+}
+
+#logo h2 {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-size:22px;
+	margin-top:5px;
+	font-weight:300;
+	color:#2F2F2F;
+	border-bottom:2px dashed #2F2F2F;
+	padding-bottom:5px;
+	padding-top:5px;
+	border-top:2px dashed #2F2F2F;
+	width:260px;
+	text-align:center;
+	margin:0 auto;
+	text-transform:none;
+	letter-spacing: .3em;
+}
+
+
+
+/* NAVIGATION
+------------------------------------------------------------ */
+
+#nav {
+	margin:0 auto;
+	margin-top:35px;
+	font-size:16px;
+	text-align:left;
+	width: 330px;
+}
+
+#nav ul {
+	list-style:none;
+	padding:0;
+}
+
+#nav li {
+	display:inline;
+	margin-left:25px;
+	background:#1A1A1A;
+	color:#FFF;
+	background-color:rgba(127,127,127,0.1);
+	-webkit-border-radius:6px;
+	padding:13px 4px 7.5px;
+	margin-left:10px!important;
+	margin-right:-7px!important;
+}
+
+#nav a {
+	color:#FFF;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-weight:bold;
+	font-size:21px;
+	background:#1A1A1A;
+	-webkit-border-radius:5px;
+	padding:3px 8px;
+	text-transform:uppercase;
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-weight:bold;
+}
+
+#nav a:visited {
+	color:#FFF;
+}
+
+.current {
+	color:#FFF;
+}
+
+.current2 {
+	-webkit-border-radius:5px;
+	padding:3px 8px;
+	text-transform:uppercase;
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-weight:bold;
+	font-size:21px;
+}
+
+
+	
+/* FEATURED
+------------------------------------------------------------ */
+
+#featured {
+	margin-top:35px!important;
+	text-align:left;
+	padding-left:10px;
+}
+
+#featured ul {
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+
+#featured li {
+	display:inline;
+	margin-left:6px;
+}
+
+#featured .first {
+	margin-left:0;
+}
+
+#featured .top {
+	top:6px;
+	position:relative;
+}
+
+#featured a image {
+	border:none;
+	-webkit-background-clip:padding;
+	border:4px solid rgba(127,127,127,0.1);
+	-webkit-border-radius:10px;
+}
+
+
+	
+/* CONTENT
+------------------------------------------------------------ */
+
+#content {
+	text-align:left;
+	margin-top:35px;
+	padding:0 10px;
+}
+
+#content p {
+	font-size:15px;
+	line-height:20px;
+	text-align: justify;
+	word-spacing: 1px;
+}
+
+#content a {
+	color:#FFF;
+	padding:3px 5px;
+	text-decoration:none;
+	-webkit-border-radius:5px;
+}
+
+#content image {
+	float:left;
+	margin-right:10px;
+	-webkit-background-clip:padding;
+	border:4px solid rgba(127,127,127,0.1);
+	-webkit-border-radius:5px;
+}
+
+
+
+/* NOW BUTTONS
+------------------------------------------------------------ */
+
+#map {
+	background:url(images/maps.png);
+}
+
+#contact {
+	background:url(images/contact.png);
+}
+
+#now {
+	text-align:left;
+	padding:0 15px 0 10px;
+}
+
+.button {
+	width:130px;
+	height:55px;
+	border:1px solid #000;
+	-webkit-border-radius:5px;
+	position:relative;
+}
+
+.bottom {
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:absolute;
+	float:right;
+	right:0;
+	bottom:0;
+	color:#FFF;
+	background:rgba(0,0,0,.7);
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	padding:2px 8px 0;
+}
+
+
+	
+/* FOOTER
+------------------------------------------------------------ */
+
+#footer {
+	margin-top:35px;
+	width:100%;
+	background:#1A1A1A;
+	color:#FFF;
+	height:42px;
+	position:absolute;
+	left:0;
+	border-top:1px solid #3C3C3C;
+	font-size:15px;
+}
+
+#copyright {
+	width:290px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#versions {
+	width:290px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#iphone {
+	background:#333;
+	padding:3px 5px 3px 6px;
+	-webkit-border-radius:5px;
+}
+
+#normal {
+	margin-left:20px;
+}
+
+#normal a {
+	color:#FFF;
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+
+/* WORK
+------------------------------------------------------------ */
+
+.work-image {
+	margin-bottom: 15px;
+	-webkit-background-clip:padding;
+	border:5px solid rgba(127,127,127,0.1);
+	-webkit-border-radius:5px;
+}
+
+
+
+/* ABOUT
+------------------------------------------------------------ */
+
+ol li {
+	font-family:'Yanone Kaffeesatz', arial, serif;
+	font-size: 18px;
+}
+
+.ol-li {
+	font-family:'Droid Sans', arial, serif;
+	font-size: 15px;
+}
+.check ul li{
+	list-style-type:none;
+	padding: 0 0 0 45px;
+	position:relative;
+	margin: 10px 0 0 -30px;
+}
+.check ul li:before{
+	/*fill it with a blank space*/
+	content:"\00a0";
+
+	/*make it a block element*/
+	display: block;
+
+	/*adding an 8px round border to a 0x0 element creates an 8px circle*/
+	border: solid 9px #000;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	height: 0;
+	width: 0;
+
+	/*Now position it on the left of the list item, and center it vertically
+	(so that it will work with multiple line list-items)*/
+	position: absolute;
+	left: 7px;
+	top: 40%;
+	margin-top: -8px;
+}
+.check ul li:after{
+	/*Add another block-level blank space*/
+	content:"\00a0";
+	display:block;
+
+	/*Make it a small rectangle so the border will create an L-shape*/
+	width: 3px;
+	height: 6px; 
+
+	/*Add a white border on the bottom and left, creating that 'L' */
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+
+	/*Position it on top of the circle*/
+	position:absolute;
+	left: 14px;
+	top: 40%;
+	margin-top: -4px;  
+
+	/*Rotate the L 45 degrees to turn it into a checkmark*/
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+
+
+/* SERVICES
+------------------------------------------------------------ */
+
+#services {
+	margin-left: -40px;
+}
+
+#services image {
+	border: none;
+	margin-top: -5px;
+}
+
+#services {
+	list-style: none !important;
+}
+
+#services li {
+	list-style: none;
+	margin-top: 25px;
+}
+
+
+
+/* CONTACT
+------------------------------------------------------------ */
+
+#contact-info li {
+	list-style: none;
+	margin: 15px 0 15px -40px;
+}
+
+#contact-info a {
+	text-align: right !important;
+}
+
+#social-media {
+   margin: auto;
+   width: 250px;
+}
+
+#social-media li {
+	display: inline;
+	list-style: none;
+}
+
+#social-media image {
+	border: none;
+	margin-right: 15px;
+}
+
+
+/* GREEN THEME
+------------------------------------------------------------ */
+
+.current2 {
+	background:#005105!important;
+}
+
+#content a {
+	background:#005105;
+	color:#FFF;
+}
