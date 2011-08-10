@@ -1,25 +1,17 @@
  <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>patmcnally.com</title>
-  <link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css"/>
-  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet" type="text/css"/>
-  <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:light,bold" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/code.css">
+  {% include head.html %}
 </head>
 <body>
+  <div id="container">
+    {% include header.html %}
 
-<div id="container"> 
-{% include header.html %}
+    <div id="content">
+      {{ content }}
+    </div>
 
-<div id="content">
-  {{ content }}
-</div>
-
-{% include disqus.html %}
-
-{% include footer.html %}
-
+    {% include disqus.html %}
+    {% include footer.html %}
+  </div>
 </body>
