@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome
+comments: true
 ---      
 
 I've been seeing phrases like, "I make things," or, "I build stuff,"
