@@ -13,3 +13,11 @@ app. They capture the thrill of possibilities and the joy of creation.
 I'm proud to be a member of the after-work hackers, the dads with
 side-projects, the compulsive experimenters, the late-night coders'
 club. And this is the place where I try to make some record of it all.
+
+{% highlight ruby %}
+def test
+    x = 'awesome'
+    y = 2
+    z = x + y
+end
+{% endhighlight %}
