@@ -27,7 +27,15 @@ h1,h2,h3,h4 {
 	clear:both;
 }
 
+h1 a{
+  font-style: none;
+  text-decoration: none;
+}
 
+h1 a:visited {
+	color:black;
+  text-decoration: none;
+}
 
 /* CONTAINER
 ------------------------------------------------------------ */
@@ -100,20 +108,20 @@ h1,h2,h3,h4 {
 /* NAVIGATION
 ------------------------------------------------------------ */
 
-#nav {
+nav {
 	margin:0 auto;
 	margin-top:35px;
 	font-size:16px;
 	text-align:left;
-	width: 330px;
+	width: 240px;
 }
 
-#nav ul {
+nav ul {
 	list-style:none;
 	padding:0;
 }
 
-#nav li {
+nav li {
 	display:inline;
 	margin-left:25px;
 	background:#1A1A1A;
@@ -125,7 +133,7 @@ h1,h2,h3,h4 {
 	margin-right:-7px!important;
 }
 
-#nav a {
+nav a {
 	color:#FFF;
 	text-decoration:none;
 	text-transform:uppercase;
@@ -140,7 +148,7 @@ h1,h2,h3,h4 {
 	font-weight:bold;
 }
 
-#nav a:visited {
+nav a:visited {
 	color:#FFF;
 }
 

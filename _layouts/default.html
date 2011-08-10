@@ -12,60 +12,14 @@
 <body>
 
 <div id="container"> 
-<header>
-  <div id="logo">
-	<h1>patmcnally.com</h1>
-	
-	<h2>brag·ga·do·ci·o</h2>
-  </div>
-</header>
+{% include header.html %}
 
 <div id="content">
   {{ content }}
 </div>
 
-<ul id="social-media">
-  <li><a href="http://www.facebook.com/people/Patrick_McNally/3109759"><img src="images/icons/facebook.png"></a></li>
-  <li><a href="http://twitter.com/patmcnally"><img src="images/icons/twitter.png"></a></li>
-  <li><a href="https://plus.google.com/115675932754468606191"><img src="images/icons/google_plus.png"></a></li>
-  <li><a href="http://www.linkedin.com/in/patrickmcnally"><img src="images/icons/linkedin.png"></a></li>
-  <li><a href="http://github.com/patmcnally"><img src="images/icons/github.png"></a></li>
-</ul>
+{% include disqus.html %}
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'patmcnally'; // required: replace example with your forum shortname
+{% include footer.html %}
 
-    // The following are highly recommended additional parameters. Remove the slashes in front to use.
-    // var disqus_identifier = 'patmcnally;
-    // var disqus_url = 'http://example.com/permalink-to-page.html';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-{% endif %}
-
-<footer>
-
-</footer>
-<!-- 
-     Thanks for the base:
-     http://themeforest.net/item/isimple-theme/128757
-     
--->
-</html>
-<script type="application/x-javascript">
-  function hideURLbar() { window.scrollTo(0, 1); }
-  addEventListener('load', function() { setTimeout(hideURLbar, 0) }, false);
-  window.onorientationchange = hideURLbar;
-</script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </body>
