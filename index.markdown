@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Welcome
----      
+---
 
 I've been seeing phrases like, "I make things," or, "I build stuff,"
 attached to many developers', makers', or hackers' profiles.  Phrases
