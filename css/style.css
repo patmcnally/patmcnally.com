@@ -303,6 +303,7 @@ nav a:visited {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 0.5em;
+  font-size: smaller;
 }
 
 

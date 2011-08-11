@@ -2,4 +2,9 @@
 layout: default
 title: Blog Entries
 ---
-Test
+
+Blogs
+=====
+{% for post in site.posts %}
+   [{{ post.title }}]({{post.url}}) {{ post.date }}
+{% endfor %}

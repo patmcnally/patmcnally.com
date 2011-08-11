@@ -90,7 +90,7 @@ Built at the indefatigable[Brighton Agency] [brighton].
 Family
 ----------
 
-![Family Screenshot](/images/work/family.png)
+![Family Screenshot](/images/work/family2.jpg)
 
 Yup, I'm that guy, I just put my family as the last item in my list of
 projects. If I kept track of sleepless nights per project, this would
