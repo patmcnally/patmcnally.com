@@ -1,17 +1,72 @@
- <!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
   {% include head.html %}
 </head>
-<body>
-  <div id="container">
-    {% include header.html %}
 
-    <div id="content">
+<body class="clearfix">
+
+  {% include header.html %}
+
+  <div class="content clearfix">
+    <div role="main">
       {{ content }}
     </div>
+</div>
 
-    {% include disqus.html %}
-    {% include footer.html %}
-  </div>
+<div role="complementary">
+</div>
+
+
+{% include footer.html %}
+
+<!-- Scripts -->
+<script src="/js/libs/jquery-1.6.2.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="/js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['/js/libs/respond.min.js']
+});
+</script>
+
+<!-- http://mths.be/aab -->
+<script>
+var _gaq=[['_setAccount','UA-2389638-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
 </body>
+<!--
+     Thanks for the base:
+     http://themeforest.net/item/isimple-theme/128757
+-->
+</html>

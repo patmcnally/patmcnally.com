@@ -6,20 +6,21 @@ title: Projects Index
 Projects
 ========
 
-For all the hours spent hammering away at a keyboard, I've manange to
-accomplish a few minor things. These are the projects I've either been
-responsible for or a major contributor too.
+For all the hours spent hammering away at the keyboard, I've mananged
+to accomplish a few minor things. These some select projects I've
+either been responsible for or a major contributor too.
 
-I build primarily on a unix stack, and my framework of choice is[Ruby
-on Rails](http://rubyonrails.org/).[Node.js](http://nodejs.org)is becoming increasingly
-attractive as way to do really cool things very fast. I also like the
-idea of writing <del>javascript</del>[coffescript](http://jashkenas.github.com/coffee-script/)on both sides of browser/server
-divide.
+I build primarily on the unix stack, and my framework of choice
+is [Ruby on Rails](http://rubyonrails.org/). Meanwhile
+[Node.js](http://nodejs.org) is becoming an attractive way to do
+really cool things very fast. It also lets me write
+<del>javascript</del> [coffescript](http://jashkenas.github.com/coffee-script/) on
+both sides of browser/server divide.
 
 UpprDwnr
 --------
 
-![UpprDwnr Screenshot](/images/work/uppr_dwnr.jpg)
+![UpprDwnr Screenshot](/img/work/uppr_dwnr.jpg)
 
 UpprDwnr was an effort to short-cut sentiment analysis of Twitter by
 encouraging the use of two distinct hash tags, #uppr and #dwnr. An
@@ -35,26 +36,27 @@ never took off. Leaving us with a system designed for orders of
 magintude more people than were using it. Lesson learned, don't
 overbuild until you know you're onto somthing.
 
-Built with[@stubelshe](http://twitter.com/stubelshe)and[@jaredmacke](http://twitter.com/jaredmacke)
+Built with [@stubelshe](http://twitter.com/stubelshe) and [@jaredmacke](http://twitter.com/jaredmacke)
 
 Scottrade Hadoop Cluster
 --------
 
-![Hadoop Mascot](/images/work/hadoop.png) Scottrade was receiving more
-information from it's add placements than it could handle. In an
-attempt to wring some buisness data from the terrabytes of log files
-I put together a Hadoop Cluster than could be summoned from Amazon's
-Web Services. The cluster would gather, do rudimentary interpretation
-and translation, and store the data in a large HFS running on-top of
-Amazon's EBS. We had just begin to return results when Scottrade
-switched ad-serving platforms and began receiving better statistics
-directly from their vendor.
+![Hadoop Mascot](/img/work/hadoop.jpg)
 
-Built at the convivial[Brighton Agency] [brighton].
+Scottrade was receiving more information from it's add placements than
+it could handle. In an attempt to wring some buisness data from the
+terrabytes of log files I put together a Hadoop Cluster than could be
+summoned from Amazon's Web Services. The cluster would gather, do
+rudimentary interpretation and translation, and store the data in a
+large HFS running on-top of Amazon's EBS. We had just begin to return
+results when Scottrade switched ad-serving platforms and began
+receiving better statistics directly from their vendor.
+
+Built at the convivial [Brighton Agency][brighton]{:class='brighton-link'}.
 
 Growing Knowldege
 --------
-![CottonCommunity Screenshot](/images/work/growingknowledge.png)
+![CottonCommunity Screenshot](/img/work/growingknowledge.png)
 
 The Growing Knowledge Newsletter, Agronomic Update, and Agronomic
 Alerts are read by hundreds of farmers a day. These communications are
@@ -66,12 +68,12 @@ that integrates with [ExactTarget](http://www.exacttarget.com). This application
 pain out of sending a large number or emails to very small groups of
 people based on geography.
 
-Built at the vivacious[Brighton Agency] [brighton].
+Built at the vivacious [Brighton Agency][brighton]{:class='brighton-link'}.
 
 Cotton Community
 --------
 
-![CottonCommunity Screenshot](/images/work/cottoncommunity.jpg)
+![CottonCommunity Screenshot](/img/work/cottoncommunity.jpg)
 
 CottonCommunity was a social network for cotton farmers, particularly
 cotton farmers who grew Deltapine brand cotton. It also became the hub
@@ -82,18 +84,18 @@ ran solid for the greater part of 3 years before it was put to
 pasture. Learned even more about when you should be saying no, like
 maybe from the very beginning.
 
-Built at the indefatigable[Brighton Agency] [brighton].
-
-
-[brighton]: http://www.brightonagency.com
+Built at the indefatigable [Brighton Agency][brighton]{:class='brighton-link'}.
 
 Family
 ----------
 
-![Family Screenshot](/images/work/family2.jpg)
+![Family Screenshot](/img/work/family2.jpg)
 
 Yup, I'm that guy, I just put my family as the last item in my list of
 projects. If I kept track of sleepless nights per project, this would
 definitly have the most.
 
-Built with the beautiful[@smcnally](http://twitter.com/smcnally)
+Built with the beautiful [@smcnally](http://twitter.com/smcnally)
+
+[brighton]: http://www.brightonagency.com 'Brighton Agency'
+

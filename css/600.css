@@ -1,0 +1,76 @@
+/* _________________________________________________
+
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+1 ROOT
+2 HEADINGS
+3 TYPOGRAPHY
+4 LINKS
+5 FIGURES & IMAGES
+6 TABLES
+7 FORMS
+8 BANNER
+9 NAVIGATION
+10 CONTENT
+11 MAIN
+12 COMPLEMENTARY
+13 CONTENTINFO
+14 GLOBAL OBJECTS
+15 VENDOR-SPECIFIC 
+16 MODERNIZR
+17 TEMPLATE SPECIFICS
+
+COLOURS 
+
+*/
+
+
+header {
+  margin: auto;
+  width: 560px;
+  text-align: left;
+}
+
+header h1{
+  display: inline-block;
+  text-align: left;
+}
+
+nav {
+  display: inline-block;
+  padding: 8px;
+}
+
+nav h2{
+  border: 0px;
+}
+
+.content{
+  margin: 10px auto;
+  max-width: 560px;
+}
+
+.content img{
+  max-width: 600px;
+}
+
+.content h1{
+  text-align: left;
+}
+
+.content h2{
+  text-align: left;
+}
+
+pre {
+  width: 560px;
+}
+
+.content img {
+  max-width: 576px;
+}
