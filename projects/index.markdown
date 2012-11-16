@@ -23,7 +23,7 @@ UpprDwnr
 ![UpprDwnr Screenshot](/img/work/uppr_dwnr.jpg)
 
 UpprDwnr was an effort to short-cut sentiment analysis on Twitter by
-encouraging the use of two distinct hash tags: #uppr and #dwnr. A
+encouraging the use of two distinct hashtags: #uppr and #dwnr. A
 node.js process was connected to the Twitter feed,
 constantly on the look out for those two tags. Once one was found we
 used a simple heuristic to parse out the user, url, or other hashtag
@@ -32,7 +32,7 @@ that was receiving the positive or negative sentiment.
 I built the process that consumed incoming tweets, written initially in Erlang and
 later in node.js.  I also did some heavy lifting on the application powering
 the public-facing website. We spent a lot of time trying to
-encourage the use of the hash tags, but they never took off. In the end we had
+encourage the use of the hashtags, but they never took off. In the end we had
 a system designed for orders of magnitude more people than were using it.
 Lesson learned, don't overbuild until you know you're onto something.
 

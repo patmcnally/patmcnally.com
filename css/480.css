@@ -28,7 +28,9 @@ _____________________________________________________
 COLOURS 
 
 */
-
+p {
+  font-size: medium;
+}
 .content img{
   max-width: 480px;
 }

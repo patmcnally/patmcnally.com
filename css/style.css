@@ -218,6 +218,7 @@ address {
 }
 p {
   hyphens: auto;
+  font-size: smaller;
   text-align: justify;
 }
 ul, ol {
