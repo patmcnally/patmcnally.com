@@ -66,7 +66,7 @@ SeeBeyondtheBag.com
 
 ![SeeBeyondTheBag.com Image Mosaic](/img/work/see_beyond_the_bag.png)
 
-[SeeBeyondTheBag.com](seebeyondthebag.com) is a microsite for the Natura family
+[SeeBeyondTheBag.com](http://seebeyondthebag.com) is a microsite for the Natura family
 of pet food brands. Natura prides itself on selecting top-quality ingredients from
 only the best suppliers. From raw supplier data we built an interactive experience
 walking the visitor from bag to ingredient source displayed on a map.
