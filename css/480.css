@@ -32,3 +32,6 @@ COLOURS
 .content img{
   max-width: 480px;
 }
+ul {
+  list-style: none;
+}

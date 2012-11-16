@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome
+title: Resume
 ---
 
 I've been seeing phrases like, "I make things," or, "I build stuff,"
