@@ -139,7 +139,6 @@ Yup, I'm that guy, I just put my family as the last item in my list of
 projects. If I kept track of sleepless nights per project, this would
 definitly have the most.
 
-Built with the beautiful [@smcnally](http://twitter.com/smcnally)
+Built with the beautiful Stephanie.
 
 [brighton]: http://www.brightonagency.com 'Brighton Agency'
-
