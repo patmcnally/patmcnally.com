@@ -45,7 +45,7 @@ Reaper
 
 Reaper is the informal name for an internal system built by Brighton to automate
 the work flow around low-volume, tightly targeted communications on multiple channels. The client
-was a large agricultural company that every fall had large numbers of real-world harvest reports they
+was a large agricultural company that, every fall, had large numbers of real-world harvest reports they
 wanted to communicate to a very targeted audience: audiences on the scale of one or two counties.
 
 This current harvest, one hundred user accounts were involved in processing over five thousand individual plot reports. Each plot report
