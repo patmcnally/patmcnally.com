@@ -21,11 +21,11 @@ _____________________________________________________
 12 COMPLEMENTARY
 13 CONTENTINFO
 14 GLOBAL OBJECTS
-15 VENDOR-SPECIFIC 
+15 VENDOR-SPECIFIC
 16 MODERNIZR
 17 TEMPLATE SPECIFICS
 
-COLOURS 
+COLOURS
 
 */
 p {
@@ -36,4 +36,8 @@ p {
 }
 ul {
   list-style: none;
+}
+nav h2 a{
+  text-decoration: none;
+  border-bottom:1px dashed;
 }
