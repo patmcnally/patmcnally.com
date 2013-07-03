@@ -10,7 +10,7 @@ end
 
 desc "Serve on Localhost with port 4000"
 task :default do
-  jekyll "--server --auto"
+  jekyll "--server --auto --pygments"
 end
 
 desc "Serve on Localhost with port 4000 using development version"

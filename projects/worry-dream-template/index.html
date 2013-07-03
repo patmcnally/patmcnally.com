@@ -1,0 +1,235 @@
+---
+title: Full Application
+layout: "worry-dream"
+---
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- header -->
+
+<div class="headerBackground"></div>
+
+<div class="header">
+  <h1>iOS Coffee</h1>
+  <h2>A Writeup of a Modern Application</h1>
+  <h3><a class="selflink" href="http://patmcnally.com/">Pat McNally</a> / December, 2012</h3>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- intro -->
+
+<div class="intro">
+  <div class="columnLeft">
+    <p><i>"In science, if you know what you are doing, you should not be doing it.  In engineering, if you do not know what you are doing, you should not be doing it.  Of course, you seldom, if ever, see either pure state."</i></p>
+    <div class="quoteCitation">&mdash;Richard Hamming, <a href="http://www.amazon.com/dp/B000P2XFPA">The Art of Doing Science and Engineering</a></div>
+
+    <p>How can we design systems when we don't know what we're doing?</p>
+
+    <p>The most exciting engineering challenges lie on the <b>boundary of theory and the unknown</b>.  Not so unknown that they're hopeless, but not enough theory to predict the results of our decisions.  Systems at this boundary often rely on <i>emergent behavior</i> &mdash; high-level effects that arise indirectly from low-level interactions.</p>
+
+    <p>When designing at this boundary, the challenge lies not in constructing the system, but in understanding it.   In the absence of theory, we must develop an <i>intuition</i> to guide our decisions.  The design process is thus one of exploration and discovery.</p>
+
+  </div>
+  <div class="columnRight" style="width:401px;">
+
+    <p>How do we explore?  If you move to a new city, you might learn the territory by walking around.  Or you might peruse a map.  But far more effective than either is <i>both together</i> &mdash; a street-level experience with higher-level guidance.</p>
+
+    <p>Likewise, the most powerful way to gain insight into a system is by <i>moving between levels of abstraction</i>.  Many designers do this instinctively.  But it's easy to get stuck on the ground, experiencing concrete systems with no higher-level view.  It's also easy to get stuck in the clouds, working entirely with abstract equations or aggregate statistics.</p>
+
+    <p>This interactive essay presents the <b>ladder of abstraction</b>, a technique for thinking <i>explicitly</i> about these levels, so a designer can move among them consciously and confidently.</p>
+
+    <p>I believe that an essential skill of the modern system designer will be using the <i>interactive medium</i> to move fluidly around the ladder of abstraction.</p>
+
+  </div>
+  <div class="endOfColumns"></div>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Column of Text -->
+
+<div class="chapter">
+  <div class="chapterHeader"><span>Column of Text, Column of Code</span></div>
+
+  <div style="width:100px; height:6px;"></div>
+
+  <div class="columnLeft">
+    <p><img class="ladderIcon" src="/img/ios-coffee/coffee-blueprint-icon.png" alt="" width="40" height="40">We'll start with an in-depth example &mdash; designing the control system for a <b>simple car simulation</b>. Our goal is to write a set of rules that allows the car to navigate roads, such as the one to the right.</p>
+
+    <p>What inputs does our system have?  Let's say that our car has a very simple sensor which can only detect three states:  the car is on the road, left of the road, or right of the road.</p>
+    <p>How do we design the rules for the car to follow?  We don't understand this system well enough to predict its behavior, so we need to <i>prototype</i>.  We start with the <i>simplest possible design</i>, and thoroughly explore it.  As we develop a feel for how it works, we'll get ideas for improvements.  We try an idea, explore again, and keep iterating.  Our design and our intuition should grow side-by-side.</p>
+  </div>
+
+  <div class="columnRight">
+    <div class="tangle">
+      <div class="algorithm">
+        {% highlight ruby %}
+# Some counting with a while.
+a = 0
+while a < 15
+  print a, " "
+  if a == 10 then
+    print "made it to ten!!"
+  end
+  a = a + 1
+end
+print "\n"
+        {% endhighlight %}
+        <div class="algorithmHeader">At each step:</div>
+        <div class="algorithmLine">Move forward 1 pixel.</div>
+        <div class="algorithmLine">If left of the road, turn right by <span data-var="turningDegrees" data-format="%.0f">&deg;</span>.</div>
+        <div class="algorithmLine">If right of the road, turn left by <span data-var="turningDegrees" data-format="%.0f">&deg;</span>.</div>
+      </div>
+    </div>
+  </div>
+  <div class="endOfColumns"></div>
+
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- two columns text, full column code --> 
+
+<div class="chapter">
+  <div class="chapterHeader"><span>Text, Text, Code</span></div>
+
+  <div class="columnLeft">
+    <p>Above, we watched the system evolve in real time.  A realtime view is useful for getting a direct, visceral sense of a system's behavior, especially for systems that are meant to be experienced by humans, such as visual effects.</p>
+    <p>However, real time is also quite limiting.  Imagine a film editor who has to watch the entire film from the beginning with every edit, and cannot even pause or rewind.  That would be absurd.  Yet, most of our interactive systems are designed in this fashion.</p>
+    <p>To understand a system, we must be able to explore it.  To explore, we must be able to move freely, under our own control.</p>
+  </div>
+
+  <div class="columnRight">
+    <p><strong><span class="ifMouse">Mouse over</span> <span class="ifTouch">Drag</span> the slider at the right</strong> to control time explicitly.  Notice that we can easily simulate realtime playback simply by <span class="ifMouse">moving the mouse over</span> <span class="ifTouch">dragging</span> the slider at a steady rate.  But we also have the ability to quickly skim over it, or stop at interesting events and examine them carefully, or quickly jump between interesting events and compare them.</p>
+    <p>A designer needs direct, interactive control over the independent variables of the system.  We must not be slaves to real time.</p>
+  </div>
+  <div class="endOfColumns"></div>
+
+  <div class="columnFull">
+    {% highlight objc %}
+    // get the view that's currently showing
+    UIView *currentView = self.view;
+    // get the the underlying UIWindow, or the view containing the current view view
+    UIView *theWindow = [currentView superview];
+
+    // remove the current view and replace with myView1
+    [currentView removeFromSuperview];
+    [theWindow addSubview:view1];
+
+    // set up an animation for the transition between the views
+    CATransition *animation = [CATransition animation];
+    [animation setDuration:0.5];
+    [animation setType:kCATransitionPush];
+    [animation setSubtype:kCATransitionFromRight];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+
+    [[theWindow layer] addAnimation:animation forKey:@"SwitchToView1"];*/
+    {% endhighlight %}
+
+  </div>
+
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- text with side note -->
+
+<div class="chapter">
+  <div class="chapterHeader"><span>Text with Side Note</span></div>
+  <div class="columnLeft">
+    <p>However, it's difficult to deliberately explore a random space that doesn't offer <b>well-defined dimensions</b> to move in.  In designing this algorithm, we want to understand <i>why</i> it behaves as it does for various data.*
+
+    <span class="sidenote">* This is not necessarily the case for all algorithms.  For some algorithms, we don't expect to understand why or how they work.  Machine-learning and genetic algorithms, in particular, might design their own rules and associations which we never actually see. (These algorithms obviously present their own challenges for designers!)  This essay considers systems whose behavior emerges from human-authored rules, and thus human understanding is an essential part of the design process.</span>
+
+    It's thus very helpful for our data to have parameters that we can <i>control</i>, and thereby <i>explain</i>.</p>
+
+    <p>An arbitrary road could look like almost anything.  In order to tame this data space, we choose some aspect of the road which we suspect is <i>significant</i> &mdash; an aspect that reflects some <i>challenge</i> that our algorithm will face.  Our algorithm is currently built around a fixed turning rate which determines how sharply the car turns.  We might therefore suspect that the sharpness of the bend in the road will play an important role.</p>
+  </div>
+  <div class="endOfColumns"></div>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- appendix: perspectives -->
+
+<div class="chapter">
+  <div class="chapterHeader"><span>Three Columns</span></div>
+
+  <div class="columnLeft" style="width:450px;">
+    <p>A ladder is a simple and useful metaphor, but it has only one dimension&nbsp;&mdash; step up, step down.  Here are some richer ways of thinking about the abstraction process, which correspond to other concepts you may be familiar with.</p>
+  </div>
+  <div class="endOfColumns"></div>
+
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!-- wildcards -->
+
+  <div class="columnLeft" style="margin-top:10px;">
+    <p><b>Wildcards.</b></p>
+  </div>
+  <div class="endOfColumns"></div>
+
+  <div class="columnLeft3">
+    <p>A fully-concrete representation has a specific value for every variable.</p>
+  </div>
+  <div class="columnMiddle3">
+    <div class="wildcards">
+      <div class="wildcard"><span>time:</span> 100</div>
+      <div class="wildcard"><span>turning rate:</span> 2&deg;</div>
+      <div class="wildcard"><span>bend angle:</span> 40&deg</div>
+    </div>
+  </div>
+  <div class="columnRight3">
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sagittis nisl vel mi eleifend malesuada.</p>
+  </div>
+  <div class="endOfColumns"></div>
+
+  <div class="columnLeft3">
+    <p>Abstracting over a variable can be thought of as assigning a "wildcard" to that variable.</p>
+  </div>
+  <div class="columnMiddle3">
+    <div class="wildcards">
+      <div class="wildcard"><span>time:</span> <b>*</b></div>
+      <div class="wildcard"><span>turning rate:</span> 2&deg;</div>
+      <div class="wildcard"><span>bend angle:</span> 40&deg</div>
+    </div>
+  </div>
+  <div class="columnRight3">
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut sagittis nisl vel mi eleifend malesuada.</p>
+  </div>
+  <div class="endOfColumns"></div>
+
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- back matter -->
+
+<div class="backMatter">
+  <div class="separator"></div>
+
+  <div class="chapter">
+
+    <div class="columnLeft">
+      <p>This work is part of the <a href="http://worrydream.com/KillMath/">Kill Math</a> project, which is dedicated to enabling people to work with quantitative systems using concrete representations and intuition-guided exploration.  For another example of interactive control and visual abstraction, see
+      <a href="http://vimeo.com/23839605/">Interactive Exploration of a Dynamical System</a>.</p>
+
+      <p>The keep-the-car-on-the-road algorithm is a favorite example of <a href="http://www.vpri.org/html/people/founders.htm">Alan Kay</a> when demonstrating <a href="http://www.squeakland.org/">eToys</a>.  I got the idea to use it after watching Alan's recent talk on <a href="http://tele-task.de/archive/video/flash/14029/">Programming and Scaling</a>.</p>
+    </div>
+    <div class="columnRight">
+      <p>Huge thanks to
+      <a href="http://osteele.com/">Oliver Steele</a>,
+      <a href="http://levitylab.com/cog/">Chaim Gingold</a>,
+      <a href="http://craigmod.com/">Craig Mod</a>, and
+      <a href="http://www.davidhellman.net/">David Hellman</a>
+      for their painfully-valuable suggestions and discussions about this essay.</p>
+      <p>Extra thanks to Oliver Steele for his comments on an <a href="http://worrydream.com/SimulationAsAPracticalTool/">earlier essay</a> of mine, where I was just starting to think about these things. His thoughts on abstraction and multiple representations have been poking at my brain for the last two years, and were a primary inspiration for the work here.</p>
+      <p style="margin-left:-2px;"><a href="https://twitter.com/share?text=Up%20and%20Down%20the%20Ladder%20of%20Abstraction&url=http%3A%2F%2Fworrydream.com%2FLadderOfAbstraction&via=worrydream"><img src="Images/TweetButton.png" alt="" width="63" height="22"></a></p>
+    </div>
+    <div class="endOfColumns"></div>
+
+  </div>
+
+</div><!-- class="backMatter" -->
+
+
+
