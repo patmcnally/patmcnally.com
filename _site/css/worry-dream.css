@@ -1,0 +1,453 @@
+* { margin:0; padding:0; }
+
+body {
+    background: #ffffff;
+    font: normal 13px/1.65 "PT Sans", "Helvetica", "Arial", sans-serif;
+    color: #696969;
+    width:100%;
+    text-align: left;
+}
+
+.header h1, 
+.header h2, 
+.header h3{
+  color: white;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* header */
+
+.headerBackground {
+    position:absolute;
+    width: 100%;
+    height: 370px;
+    top:0px;
+    background-image: url(/img/worry-dream/random_grey_variations.png);
+    background-repeat: repeat-x;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .headerBackground {
+    background-image: url(/img/worry-dream/random_grey_variations@2x.png);
+  }
+}
+
+.header {
+    position: relative;
+    width: 920px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* body */
+
+.intro {
+    margin-top: 30px;
+    width: 840px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quoteCitation {
+    margin-top:-5px;
+    margin-bottom:29px;
+    font-size: 11px;
+    text-align: right;
+}
+
+.quoteCitation a {
+    color: #696969;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.sidenote {
+    margin-top:4px;
+    margin-bottom:8px;
+    font-size: 11px;
+    line-height: 1.3;
+    color: #aaa;
+}
+
+span.sidenote {
+    position: absolute;
+    left: 440px;
+    width: 400px;
+}
+
+.spacer {
+    height: 10px;
+}
+
+.chapter {
+    margin-top: 40px;
+    width: 840px;
+    padding-top: 48px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chapterHeader  {
+    text-align: center;
+    position: absolute;
+    width: inherit;
+    height: 16px;
+    top: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chapterHeader span {
+    font: bold 25px "PT Sans", "Helvetica", "Arial", sans-serif; 
+    color: #222;
+    background-color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.separator {
+    width: 100%;
+    height: 77px;
+    background-image: url(Images/Separator.png);
+    background-repeat: repeat-x;
+    margin-top:30px;
+    margin-bottom:-30px;
+}
+
+.ladderIcon {
+    float:left;
+    margin-left:-11px;
+    margin-right:4px;
+    margin-top:4px;
+    margin-bottom:-2px;
+}
+
+.ifMouse {
+}
+
+.ifTouch {
+    display:none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* backMatter */
+
+.backMatter {
+    width: 100%;
+    background: #222;
+    padding-bottom:1px;
+}
+
+.backMatter .separator {
+    position:relative;
+    top: -16px;
+}
+
+.backMatter .chapter {
+    margin-top: 18px;
+    padding-top: 0px;
+    font: normal 12px/1.65 "PT Sans", "Helvetica", "Arial", sans-serif;
+    color: #666;
+}
+
+.backMatter a {
+    color: #888;
+    text-decoration: none;
+}
+
+.backMatter a:hover {
+    color: #aaa;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* columns */
+
+.columnLeft {
+    width: 400px;
+    float: left;
+}
+
+.columnRight {
+    float: right;
+    width: 400px;
+}
+
+.columnFull {
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+.columnLeft3 {
+    width: 250px;
+    float: left;
+}
+
+.columnMiddle3 {
+    margin-left:45px;
+    width: 250px;
+    float: left;
+}
+
+.columnRight3 {
+    float: right;
+    width: 250px;
+    overflow: hidden;
+}
+
+.endOfColumns {
+    clear: both;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* algorithm */
+
+.algorithm {
+    position:relative;
+    top:-8px;  /* negative margin-top breaks safari */
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#f2f2f2));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #f2f2f2 100%);
+}
+
+.atTopOfChapter {
+    top:4px;
+    margin-bottom:22px;
+}
+
+.algorithmHeader {
+    position:relative;
+    font: bold 13px/1.5 "Helvetica", "Arial", sans-serif;
+    color: #333;
+}
+
+.algorithmLine {
+    position:relative;
+    margin-left: 14px;
+    font: normal 12px/1.4 "Helvetica", "Arial", sans-serif;
+    color: #666;
+}
+
+.arcLine {
+    position:relative;
+    font: bold 13px/1.5 "Helvetica", "Arial", sans-serif;
+    color: #333;
+    margin-top:10px;
+    margin-bottom:4px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* perspectives */
+
+.perspectiveRoad {
+    -webkit-transform: scale(0.625);
+    -moz-transform: scale(0.625);
+    -o-transform: scale(0.625);
+    -ms-transform: scale(0.625);
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+}
+
+.wildcards {
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    margin-bottom: 12px;
+    background-color: #f2f2f2;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#f2f2f2));
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #f2f2f2 100%);
+}
+
+.wildcard {
+    margin-left: 14px;
+    font: normal 12px/1.4 "Helvetica", "Arial", sans-serif;
+    color: #444;
+}
+
+.wildcard span {
+    color: #999;
+}
+
+.wildcard b {
+    font-family: "Courier New", "Courier", monospace;
+}
+
+.perspectiveCode {
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+    color: #888;
+}
+
+.cube {
+    margin-left:50px;
+    margin-bottom:15px;
+}
+
+.swingEquationBox {
+    text-align:center;
+    margin-left:40px;
+    border: 1px solid #e2e2e2;
+    padding-top:34px;
+    padding-bottom:26px;
+    margin-bottom:10px;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* controls */
+
+.SliderLabel {
+    font: 10px "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#ccc;
+    text-align: center;
+}
+
+.PlotLabel {
+    font: 10px "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#bbb;
+    text-align: center;
+}
+
+.PlotLabelDark {
+    color:#555;
+}
+
+.LadderSweptArcUnbendedLabel {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    color:#aaa;
+    text-align: center;
+}
+
+.LadderTimePlotLabel {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#ccc;
+}
+
+.LadderTimeGridLabel {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#aaa;
+}
+
+.LadderSensorsLabel {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#aaa;
+    text-align: center;
+}
+
+.LadderReflectionLabel {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    color:#777;
+    text-align: center;
+}
+
+.LadderActionLink {
+    color: #46f;
+    border-bottom: 1px dashed #46f;
+    cursor: pointer;
+}
+
+.LadderHeaderKeyboardHelpText {
+    font: 9px/1.0 "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color:#aec4d2;
+}
+
+.LadderTimeGridDescription {
+    font: bold 13px/1.5 "Helvetica", "Arial", sans-serif;
+    color: #333;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* animations */
+
+@-webkit-keyframes LadderHeaderBubbleBounce {
+ 
+  from { -webkit-transform: scale(0.99); }
+  to   { -webkit-transform: scale(1.01); }
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* generic */
+
+p {
+    margin-bottom:12px;
+}
+
+pre {
+    margin-bottom:12px;
+}
+
+strong {
+    font-weight:bold;
+    color: #f00;
+}
+
+b {
+    font-weight:bold;
+    color: #000;
+}
+
+a { 
+    text-decoration:underline; 
+    color: #933; 
+    border:none;
+}
+
+a:hover {
+    text-decoration:underline;
+    color: #933;
+}
+
+img { 
+    border:none;
+}
+
+ul {
+    margin-left:22px;
+    margin-bottom: 12px;
+}
+
+ol {
+    margin-left:22px;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom:8px;
+}
+
