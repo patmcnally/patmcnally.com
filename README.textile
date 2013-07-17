@@ -1,11 +1,4 @@
-h1. This is the data for my blog
-
-It is automatically transformed by
-"Jekyll":http://github.com/mojombo/jekyll into a static site whenever
-I push this repository to GitHub.
-
-This has been heavily inspired by Tom Preston-Werner's own blog which
-can be seen on his "github":http://github.com/mojombo/tpw/tree/master
+h2. patmcnally.com - backing jekyll site
 
 h1. License
 
@@ -14,4 +7,5 @@ The following directories and their contents are Copyright Pat McNally. You may 
 * _posts/
 * images/
 
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. 
+All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please.
+
